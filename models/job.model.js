@@ -37,6 +37,10 @@ const jobSchema = new mongoose.Schema({
         ref: 'Company',
         required: true
     },
+     experienceLevel:{
+        type:Number,
+        required:true,
+    },
     created_by: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',//recruiter
